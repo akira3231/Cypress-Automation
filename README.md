@@ -34,7 +34,6 @@ Cypress-Automation/
 │   │   ├── clearText.cy.js             # Typing and clearing input fields
 │   │   ├── scroll.cy.js                # Page and element scrolling
 │   │   ├── upload.cy.js                # File upload
-│   │   ├── slider.cy.js                # Range slider interaction
 │   │   └── mouseOver.cy.js             # Mouse hover interactions
 │   │
 │   ├── fixtures/                       # Static test data files (JSON, PDFs etc.)
@@ -89,7 +88,6 @@ npx cypress run
 | `clearText.cy.js` | Typing into inputs and clearing the text | ParaBank |
 | `scroll.cy.js` | Scrolling page to positions, coordinates, and elements | Rahul Shetty Academy |
 | `upload.cy.js` | Selecting and uploading a local file | Practice Automation |
-| `slider.cy.js` | Setting range slider value using `.invoke()` | Practice Automation |
 | `mouseOver.cy.js` | Revealing hover menus using `.invoke('show')` | Rahul Shetty Academy |
 
 ---
@@ -144,7 +142,6 @@ cy.contains('.list-item', 'some text')   // By selector + visible text
 .uncheck(['option1'])                    // Uncheck a checkbox by value
 .selectFile('path/to/file.pdf')          // Upload a file
 .scrollIntoView()                        // Scroll until element is visible
-.invoke('val', 1500).trigger('change')   // Set slider value
 .invoke('show')                          // Force a hidden element to be visible
 ```
 
@@ -213,7 +210,6 @@ cy.contains('.select2-results__option', '8400143').click()
 | VinothQA Academy | https://vinothqaacademy.com/drop-down/ | Dynamic Dropdowns |
 | Rahul Shetty Academy | https://rahulshettyacademy.com/AutomationPractice/ | Radio Buttons, Checkboxes, Scroll, Hover |
 | Practice Automation | https://practice-automation.com/file-upload/ | File Upload |
-| Practice Automation | https://practice-automation.com/slider/ | Range Slider |
 
 ---
 
