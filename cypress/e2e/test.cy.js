@@ -1,7 +1,3 @@
-
-// TEST SUITE 4: BASIC VISIT TEST
-// A simple sanity check to make sure cy.visit() works
-// ============================================================
 describe('First Test', () => {
     it('passes', () => {
 

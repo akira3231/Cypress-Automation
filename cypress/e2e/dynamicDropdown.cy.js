@@ -1,7 +1,3 @@
-// ============================================================
-// TEST SUITE 5: DYNAMIC DROPDOWN
-// Typing in a search-based dropdown and selecting a result
-// ============================================================
 describe('Handling dynamic dropdown functionality', () => {
     it('Dynamic Dropdown', () => {
 

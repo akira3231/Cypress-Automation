@@ -1,7 +1,3 @@
-// ============================================================
-// TEST SUITE 1: LOGIN FUNCTIONALITY
-// describe() groups related tests together under one name
-// ============================================================
 describe('Login Functionality', () => {
 
     // it() defines a single test case with a description

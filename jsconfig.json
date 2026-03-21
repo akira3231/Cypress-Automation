@@ -1,3 +1,17 @@
+// ============================================================
+// JSCONFIG.JSON
+// Tells VS Code how to understand your JavaScript project
+// This is NOT a Cypress config — it's purely for your code editor
+// ============================================================
 {
-  "include": ["./node_modules/cypress", "cypress/**/*.js"]
+  "include": [
+    // Includes Cypress's own files so VS Code can read its type definitions
+    // This is what gives you autocomplete for cy.get(), cy.visit() etc. in VS Code
+    "./node_modules/cypress",
+
+    // Includes ALL your .js files inside the cypress folder
+    // ** means any subfolder, *.js means any JavaScript file
+    // e.g. cypress/e2e/login.cy.js, cypress/support/commands.js etc.
+    "cypress/**/*.js"
+  ]
 }
