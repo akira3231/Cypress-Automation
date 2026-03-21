@@ -227,8 +227,6 @@ cy.contains('.select2-results__option', '8400143').click()
 - Always close `describe()` and `it()` blocks with `})` not just `}` or `)`
 - For file uploads, store test files inside `cypress/fixtures/` so they work on any machine:
 ```js
-// ❌ Breaks on other machines
-cy.get('#file-upload').selectFile('/home/jojo/Downloads/myfile.pdf')
 
 // ✅ Works everywhere — file travels with the project
 cy.get('#file-upload').selectFile('cypress/fixtures/myfile.pdf')
