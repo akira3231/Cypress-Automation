@@ -26,7 +26,7 @@ describe('Check box functionality', () => {
         // Works ONLY on checkboxes — radio buttons cannot be unchecked this way
         cy.get('input[type="checkbox"]').uncheck(["option3", "option1"])
 
-        // 💡 TIP: You could add these assertions after unchecking to complete the test
+        // You could add these assertions after unchecking to complete the test
         // cy.get('input[value="option1"]').should('not.be.checked')
         // cy.get('input[value="option3"]').should('not.be.checked')
     })
